@@ -1,0 +1,318 @@
+{
+  "trackerInfo": {
+    "peito":       { "label": "Peito",          "emoji": "🫁" },
+    "costas":      { "label": "Costas",          "emoji": "🔙" },
+    "ombros_trap": { "label": "Ombros/Trap.",    "emoji": "🧥" },
+    "bracos":      { "label": "Braços",          "emoji": "💪" },
+    "pernas":      { "label": "Pernas (Coxa)",   "emoji": "🦵" },
+    "gluteos":     { "label": "Glúteos",         "emoji": "🍑" },
+    "panturrilha": { "label": "Panturrilha",     "emoji": "🧦" },
+    "core":        { "label": "Core/Cardio",     "emoji": "🛡️" }
+  },
+  "workouts": [
+    {
+      "id": "low",
+      "name": "BAIXA ENERGIA",
+      "iconId": "battery",
+      "description": "Movimentos leves e alongamentos. O objetivo é soltar as articulações e manter o hábito sem pressão.",
+      "slots": [
+        {
+          "id": "l_peito", "section": "Superiores", "tracker": "peito", "muscle": "Peito",
+          "options": [
+            { "id": "l_peito_v1", "name": "Alongamento na Porta",       "target": "Peitoral",        "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_peito_v2", "name": "Abertura de Braços (Dinâmico)", "target": "Peitoral",     "reps": "2x 15",  "rest": "Livre" },
+            { "id": "l_peito_v3", "name": "Flexão na Parede (Leve)",    "target": "Peitoral",        "reps": "2x 10",  "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_costas", "section": "Superiores", "tracker": "costas", "muscle": "Costas",
+          "options": [
+            { "id": "l_costas_v1", "name": "Alongamento Gato-Vaca",        "target": "Lombar/Dorsal",  "reps": "2x 10",  "rest": "30s"  },
+            { "id": "l_costas_v2", "name": "Abraçar os Joelhos (Deitada)", "target": "Lombar",         "reps": "1 min",  "rest": "Livre" },
+            { "id": "l_costas_v3", "name": "Puxada com Elástico (Leve)",   "target": "Dorsais",        "reps": "2x 15",  "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_ombro", "section": "Superiores", "tracker": "ombros_trap", "muscle": "Ombros",
+          "options": [
+            { "id": "l_ombro_v1", "name": "Rotação de Ombros",       "target": "Deltoides",          "reps": "3x 15",  "rest": "Livre" },
+            { "id": "l_ombro_v2", "name": "Círculos com os Braços",  "target": "Manguito/Ombro",     "reps": "2x 20s", "rest": "Livre" },
+            { "id": "l_ombro_v3", "name": "Alongamento Cruzado",     "target": "Deltoide Posterior", "reps": "2x 30s", "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_trap", "section": "Superiores", "tracker": "ombros_trap", "muscle": "Trapézio",
+          "options": [
+            { "id": "l_trap_v1", "name": "Alongamento Lateral Pescoço", "target": "Trapézio Superior",  "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_trap_v2", "name": "Encolhimento (Sem Peso)",     "target": "Trapézio",           "reps": "2x 15",  "rest": "Livre" },
+            { "id": "l_trap_v3", "name": "Rotação Lenta de Cabeça",     "target": "Pescoço/Trapézio",   "reps": "1 min",  "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_bracos", "section": "Superiores", "tracker": "bracos", "muscle": "Braços",
+          "options": [
+            { "id": "l_bracos_v1", "name": "Alongamento Tríceps (Costas)", "target": "Tríceps",      "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_bracos_v2", "name": "Alongamento Bíceps (Parede)",  "target": "Bíceps",       "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_bracos_v3", "name": "Extensão de Cotovelo Livre",   "target": "Articulação",  "reps": "2x 15",  "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_punho", "section": "Superiores", "tracker": "bracos", "muscle": "Antebraço/Punho",
+          "options": [
+            { "id": "l_punho_v1", "name": "Alongamento de Punho",          "target": "Antebraço",        "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_punho_v2", "name": "Rotação de Punhos",             "target": "Articulações",     "reps": "1 min",  "rest": "Livre" },
+            { "id": "l_punho_v3", "name": "Abre e Fecha Mãos (Rápido)",   "target": "Dedos/Antebraço",  "reps": "2x 20",  "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_quad", "section": "Inferiores", "tracker": "pernas", "muscle": "Quadríceps",
+          "options": [
+            { "id": "l_quad_v1", "name": "Alongamento Puxando o Pé",          "target": "Quadríceps",        "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_quad_v2", "name": "Sentar nos Calcanhares",            "target": "Joelho/Coxa",       "reps": "1 min",  "rest": "Livre" },
+            { "id": "l_quad_v3", "name": "Elevação Perna Reta (Deitada)",     "target": "Quadríceps Leve",   "reps": "2x 15",  "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_post", "section": "Inferiores", "tracker": "pernas", "muscle": "Posterior",
+          "options": [
+            { "id": "l_post_v1", "name": "Tocar a Ponta do Pé (Sentada)",           "target": "Isquiotibiais",     "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_post_v2", "name": "Alongamento com Toalha",                  "target": "Posterior Coxa",    "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_post_v3", "name": "Tocar o Chão (Em pé, joelho leve)",       "target": "Isquiotibiais",     "reps": "2x 30s", "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_glut", "section": "Inferiores", "tracker": "gluteos", "muscle": "Glúteos",
+          "options": [
+            { "id": "l_glut_v1", "name": "Borboletinha (Sentada)",      "target": "Interno da Coxa",  "reps": "1 min",  "rest": "Livre" },
+            { "id": "l_glut_v2", "name": "Alongamento Piriforme",       "target": "Glúteos",          "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_glut_v3", "name": "Ponte Glútea (Sem Peso)",     "target": "Ativação Glútea",  "reps": "2x 15",  "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_pant", "section": "Inferiores", "tracker": "panturrilha", "muscle": "Panturrilha",
+          "options": [
+            { "id": "l_pant_v1", "name": "Alongamento na Parede",    "target": "Panturrilha", "reps": "2x 30s", "rest": "Livre" },
+            { "id": "l_pant_v2", "name": "Rotação de Tornozelos",    "target": "Tornozelos",  "reps": "1 min",  "rest": "Livre" },
+            { "id": "l_pant_v3", "name": "Elevação na Ponta do Pé",  "target": "Panturrilha", "reps": "2x 15",  "rest": "Livre" }
+          ]
+        },
+        {
+          "id": "l_core", "section": "Core", "tracker": "core", "muscle": "Core/Cardio",
+          "options": [
+            { "id": "l_core_v1", "name": "Vácuo Abdominal",         "target": "Core Profundo",     "reps": "3x 15s", "rest": "30s"  },
+            { "id": "l_core_v2", "name": "Caminhada Leve / Dança",  "target": "Cardio",            "reps": "15 min", "rest": "Livre" },
+            { "id": "l_core_v3", "name": "Prancha de Joelhos",      "target": "Core (Transverso)", "reps": "2x 20s", "rest": "30s"  }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "med",
+      "name": "MÉDIA ENERGIA",
+      "iconId": "battery-medium",
+      "description": "Foco na estética e hipertrofia. Carga moderada, prestando muita atenção ao movimento.",
+      "slots": [
+        {
+          "id": "m_peito", "section": "Superiores", "tracker": "peito", "muscle": "Peito",
+          "options": [
+            { "id": "m_peito_v1", "name": "Supino Máquina",            "target": "Peitoral Maior", "reps": "3x 12", "rest": "60s" },
+            { "id": "m_peito_v2", "name": "Supino Reto com Halteres",  "target": "Peitoral",       "reps": "3x 12", "rest": "60s" },
+            { "id": "m_peito_v3", "name": "Voador (Peck Deck)",        "target": "Miolo do Peito", "reps": "3x 12", "rest": "60s" }
+          ]
+        },
+        {
+          "id": "m_costas", "section": "Superiores", "tracker": "costas", "muscle": "Costas",
+          "options": [
+            { "id": "m_costas_v1", "name": "Puxada Frontal Aberta",       "target": "Latíssimo (Asas)",   "reps": "3x 12", "rest": "60s" },
+            { "id": "m_costas_v2", "name": "Remada Baixa (Triângulo)",    "target": "Meio das Costas",    "reps": "3x 12", "rest": "60s" },
+            { "id": "m_costas_v3", "name": "Remada Curvada Halteres",     "target": "Dorsais e Lombar",   "reps": "3x 12", "rest": "60s" }
+          ]
+        },
+        {
+          "id": "m_ombro", "section": "Superiores", "tracker": "ombros_trap", "muscle": "Ombros",
+          "options": [
+            { "id": "m_ombro_v1", "name": "Desenvolvimento Halteres", "target": "Deltoides",        "reps": "3x 12", "rest": "60s" },
+            { "id": "m_ombro_v2", "name": "Elevação Lateral",         "target": "Deltoide Lateral", "reps": "3x 12", "rest": "60s" },
+            { "id": "m_ombro_v3", "name": "Elevação Frontal",         "target": "Deltoide Frontal", "reps": "3x 12", "rest": "60s" }
+          ]
+        },
+        {
+          "id": "m_trap", "section": "Superiores", "tracker": "ombros_trap", "muscle": "Trapézio",
+          "options": [
+            { "id": "m_trap_v1", "name": "Encolhimento com Halteres",       "target": "Trapézio Superior", "reps": "3x 15", "rest": "45s" },
+            { "id": "m_trap_v2", "name": "Remada Alta (Polia ou Halter)",   "target": "Trapézio/Ombro",    "reps": "3x 12", "rest": "60s" },
+            { "id": "m_trap_v3", "name": "Encolhimento na Máquina/Smith",   "target": "Trapézio Superior", "reps": "3x 15", "rest": "45s" }
+          ]
+        },
+        {
+          "id": "m_bic", "section": "Superiores", "tracker": "bracos", "muscle": "Bíceps",
+          "options": [
+            { "id": "m_bic_v1", "name": "Rosca Direta Halteres",  "target": "Bíceps Braquial",        "reps": "3x 12", "rest": "45s" },
+            { "id": "m_bic_v2", "name": "Rosca Scott (Máquina)",  "target": "Bíceps Isolado",         "reps": "3x 12", "rest": "45s" },
+            { "id": "m_bic_v3", "name": "Rosca Martelo",          "target": "Braquial (Volume braço)","reps": "3x 12", "rest": "45s" }
+          ]
+        },
+        {
+          "id": "m_tric", "section": "Superiores", "tracker": "bracos", "muscle": "Tríceps",
+          "options": [
+            { "id": "m_tric_v1", "name": "Tríceps Polia (Corda)",     "target": "Tríceps (Tchauzinho)",  "reps": "3x 15", "rest": "45s" },
+            { "id": "m_tric_v2", "name": "Tríceps Testa",             "target": "Porção Longa Tríceps",  "reps": "3x 12", "rest": "45s" },
+            { "id": "m_tric_v3", "name": "Mergulho (Banco/Máquina)",  "target": "Tríceps Geral",         "reps": "3x 12", "rest": "60s" }
+          ]
+        },
+        {
+          "id": "m_ante", "section": "Superiores", "tracker": "bracos", "muscle": "Antebraço/Punho",
+          "options": [
+            { "id": "m_ante_v1", "name": "Flexão de Punho (Barra/Halter)", "target": "Antebraço Interno",  "reps": "3x 15", "rest": "45s" },
+            { "id": "m_ante_v2", "name": "Rosca Inversa (Polia/Barra)",    "target": "Antebraço Externo",  "reps": "3x 12", "rest": "45s" },
+            { "id": "m_ante_v3", "name": "Extensão de Punho (Halter)",     "target": "Antebraço Superior", "reps": "3x 15", "rest": "45s" }
+          ]
+        },
+        {
+          "id": "m_quad", "section": "Inferiores", "tracker": "pernas", "muscle": "Quadríceps",
+          "options": [
+            { "id": "m_quad_v1", "name": "Agachamento (Livre/Máquina)", "target": "Quadríceps/Glúteos",  "reps": "3x 12", "rest": "60s" },
+            { "id": "m_quad_v2", "name": "Leg Press 45°",               "target": "Quadríceps (Volume)", "reps": "3x 12", "rest": "60s" },
+            { "id": "m_quad_v3", "name": "Cadeira Extensora",           "target": "Quadríceps Isolado",  "reps": "3x 12", "rest": "60s" }
+          ]
+        },
+        {
+          "id": "m_post", "section": "Inferiores", "tracker": "pernas", "muscle": "Posterior da Coxa",
+          "options": [
+            { "id": "m_post_v1", "name": "Cadeira Flexora",           "target": "Isquiotibiais",      "reps": "3x 12", "rest": "60s" },
+            { "id": "m_post_v2", "name": "Mesa Flexora (Deitada)",    "target": "Posterior Isolado",  "reps": "3x 12", "rest": "60s" },
+            { "id": "m_post_v3", "name": "Stiff com Halteres/Barra",  "target": "Posterior e Lombar", "reps": "3x 12", "rest": "60s" }
+          ]
+        },
+        {
+          "id": "m_glut", "section": "Inferiores", "tracker": "gluteos", "muscle": "Glúteos",
+          "options": [
+            { "id": "m_glut_v1", "name": "Elevação Pélvica",        "target": "Glúteo Máximo", "reps": "3x 15", "rest": "60s" },
+            { "id": "m_glut_v2", "name": "Cadeira Abdutora",        "target": "Glúteo Médio",  "reps": "3x 15", "rest": "45s" },
+            { "id": "m_glut_v3", "name": "Glúteo Polia/Máquina",   "target": "Glúteo Isolado","reps": "3x 12", "rest": "60s" }
+          ]
+        },
+        {
+          "id": "m_pant", "section": "Inferiores", "tracker": "panturrilha", "muscle": "Panturrilha",
+          "options": [
+            { "id": "m_pant_v1", "name": "Gêmeos Sentado (Máquina)",     "target": "Panturrilha (Sóleo)",    "reps": "3x 15", "rest": "45s" },
+            { "id": "m_pant_v2", "name": "Panturrilha no Leg Press",     "target": "Gastrocnêmio",           "reps": "3x 15", "rest": "45s" },
+            { "id": "m_pant_v3", "name": "Panturrilha em Pé (Smith)",    "target": "Panturrilha Completa",   "reps": "3x 15", "rest": "45s" }
+          ]
+        },
+        {
+          "id": "m_core", "section": "Core", "tracker": "core", "muscle": "Abdômen",
+          "options": [
+            { "id": "m_core_v1", "name": "Prancha Isométrica",       "target": "Core/Transverso",  "reps": "3x 30s", "rest": "45s" },
+            { "id": "m_core_v2", "name": "Abdominal Supra (Chão)",   "target": "Reto Abdominal",   "reps": "3x 20",  "rest": "45s" },
+            { "id": "m_core_v3", "name": "Abdominal Máquina",        "target": "Gominhos",         "reps": "3x 15",  "rest": "45s" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "high",
+      "name": "ALTA ENERGIA",
+      "iconId": "battery-full",
+      "description": "Gasto calórico extremo. Cuidado com as articulações. Movimentos explosivos e de resistência.",
+      "slots": [
+        {
+          "id": "h_peito", "section": "Superiores", "tracker": "peito", "muscle": "Peito",
+          "options": [
+            { "id": "h_peito_v1", "name": "Flexão de Braço",             "target": "Peitoral Completo", "reps": "4x Máx", "rest": "60s" },
+            { "id": "h_peito_v2", "name": "Supino Inclinado Halteres",   "target": "Peito Superior",    "reps": "4x 12",  "rest": "45s" },
+            { "id": "h_peito_v3", "name": "Crossover Polia Alta",        "target": "Miolo do Peito",    "reps": "4x 15",  "rest": "45s" }
+          ]
+        },
+        {
+          "id": "h_costas", "section": "Superiores", "tracker": "costas", "muscle": "Costas",
+          "options": [
+            { "id": "h_costas_v1", "name": "Remada Serrote (Pesado)",    "target": "Dorsal",              "reps": "4x 10",  "rest": "45s" },
+            { "id": "h_costas_v2", "name": "Barra Fixa (ou Graviton)",   "target": "Costas Completo",     "reps": "4x Máx", "rest": "60s" },
+            { "id": "h_costas_v3", "name": "Pulldown Corda",             "target": "Latíssimo do Dorso",  "reps": "4x 15",  "rest": "45s" }
+          ]
+        },
+        {
+          "id": "h_ombro", "section": "Superiores", "tracker": "ombros_trap", "muscle": "Ombros",
+          "options": [
+            { "id": "h_ombro_v1", "name": "Desenvolvimento Arnold",      "target": "Deltoide Completo",        "reps": "4x 12", "rest": "45s" },
+            { "id": "h_ombro_v2", "name": "Elevação Lateral (Polia)",    "target": "Ombro Lateral Constante",  "reps": "4x 15", "rest": "45s" },
+            { "id": "h_ombro_v3", "name": "Face Pull (Polia)",           "target": "Deltoide Posterior",       "reps": "4x 15", "rest": "45s" }
+          ]
+        },
+        {
+          "id": "h_trap", "section": "Superiores", "tracker": "ombros_trap", "muscle": "Trapézio",
+          "options": [
+            { "id": "h_trap_v1", "name": "Caminhada do Fazendeiro",    "target": "Trapézio e Grip",    "reps": "3x 1 min", "rest": "60s" },
+            { "id": "h_trap_v2", "name": "Encolhimento com Barra",     "target": "Trapézio Superior",  "reps": "4x 12",    "rest": "45s" },
+            { "id": "h_trap_v3", "name": "Remada Alta (Corda/Polia)",  "target": "Trapézio Central",   "reps": "4x 12",    "rest": "45s" }
+          ]
+        },
+        {
+          "id": "h_bic", "section": "Superiores", "tracker": "bracos", "muscle": "Bíceps",
+          "options": [
+            { "id": "h_bic_v1", "name": "Rosca 21 (Barra/Halter)",    "target": "Bíceps Extremo",    "reps": "3x 21", "rest": "60s" },
+            { "id": "h_bic_v2", "name": "Rosca Concentrada",          "target": "Pico do Bíceps",    "reps": "4x 10", "rest": "45s" },
+            { "id": "h_bic_v3", "name": "Rosca Dupla (Polia Alta)",   "target": "Bíceps Braquial",   "reps": "4x 15", "rest": "45s" }
+          ]
+        },
+        {
+          "id": "h_tric", "section": "Superiores", "tracker": "bracos", "muscle": "Tríceps",
+          "options": [
+            { "id": "h_tric_v1", "name": "Tríceps Francês (Halter)",          "target": "Tríceps Longo",       "reps": "4x 12",  "rest": "45s" },
+            { "id": "h_tric_v2", "name": "Tríceps Coice (Polia/Halter)",      "target": "Definição Tríceps",   "reps": "4x 15",  "rest": "45s" },
+            { "id": "h_tric_v3", "name": "Flexão Diamante",                   "target": "Tríceps/Peito Interno","reps": "3x Máx", "rest": "60s" }
+          ]
+        },
+        {
+          "id": "h_ante", "section": "Superiores", "tracker": "bracos", "muscle": "Antebraço/Punho",
+          "options": [
+            { "id": "h_ante_v1", "name": "Rolo de Punho (Wrist Roller)",      "target": "Antebraço Queima",  "reps": "3x Máx", "rest": "60s" },
+            { "id": "h_ante_v2", "name": "Sustentação de Anilhas (Pinch)",    "target": "Força de Pegada",   "reps": "3x 30s", "rest": "45s" },
+            { "id": "h_ante_v3", "name": "Rosca Zottman",                     "target": "Bíceps e Antebraço","reps": "3x 12",  "rest": "45s" }
+          ]
+        },
+        {
+          "id": "h_quad", "section": "Inferiores", "tracker": "pernas", "muscle": "Quadríceps",
+          "options": [
+            { "id": "h_quad_v1", "name": "Agachamento Búlgaro",           "target": "Quadríceps Unilateral", "reps": "3x 12(cada)", "rest": "60s" },
+            { "id": "h_quad_v2", "name": "Afundo / Passada Caminhando",   "target": "Coxas Gerais",          "reps": "3x 20 passos","rest": "60s" },
+            { "id": "h_quad_v3", "name": "Agachamento Sumô Pesado",       "target": "Quadríceps/Interno",    "reps": "4x 12",       "rest": "60s" }
+          ]
+        },
+        {
+          "id": "h_post", "section": "Inferiores", "tracker": "pernas", "muscle": "Posterior da Coxa",
+          "options": [
+            { "id": "h_post_v1", "name": "Stiff Unilateral",              "target": "Posterior e Equilíbrio", "reps": "3x 10(cada)", "rest": "45s" },
+            { "id": "h_post_v2", "name": "Flexora em Pé Unilateral",      "target": "Isquiotibiais Isolado",  "reps": "4x 12",       "rest": "45s" },
+            { "id": "h_post_v3", "name": "Bom Dia (Good Morning)",        "target": "Posterior/Lombar",       "reps": "4x 12",       "rest": "60s" }
+          ]
+        },
+        {
+          "id": "h_glut", "section": "Inferiores", "tracker": "gluteos", "muscle": "Glúteos",
+          "options": [
+            { "id": "h_glut_v1", "name": "Elevação Pélvica Unilateral",       "target": "Glúteo Máximo",        "reps": "4x 10(cada)", "rest": "45s" },
+            { "id": "h_glut_v2", "name": "Abdução na Polia",                  "target": "Glúteo Lateral",       "reps": "4x 15(cada)", "rest": "45s" },
+            { "id": "h_glut_v3", "name": "Agachamento Sumô c/ Kettlebell",    "target": "Glúteo/Interno Coxa",  "reps": "4x 15",       "rest": "45s" }
+          ]
+        },
+        {
+          "id": "h_pant", "section": "Inferiores", "tracker": "panturrilha", "muscle": "Panturrilha",
+          "options": [
+            { "id": "h_pant_v1", "name": "Panturrilha Unilateral (Halter)", "target": "Panturrilha Intensa",   "reps": "4x 15(cada)", "rest": "45s" },
+            { "id": "h_pant_v2", "name": "Saltos na Caixa (Box Jump)",     "target": "Potência Panturrilha",  "reps": "3x 10",       "rest": "60s" },
+            { "id": "h_pant_v3", "name": "Panturrilha no Degrau (Rápido)", "target": "Resistência",           "reps": "4x 20",       "rest": "45s" }
+          ]
+        },
+        {
+          "id": "h_core", "section": "Core", "tracker": "core", "muscle": "Core/Cardio",
+          "options": [
+            { "id": "h_core_v1", "name": "Abdominal Bicicleta",            "target": "Oblíquos",       "reps": "4x 20",        "rest": "45s"      },
+            { "id": "h_core_v2", "name": "Elíptico/Bike Acelerada",        "target": "Cardio Queima",  "reps": "15 min",       "rest": "Contínuo" },
+            { "id": "h_core_v3", "name": "Prancha com Toque no Ombro",     "target": "Core Dinâmico",  "reps": "3x 20 toques", "rest": "45s"      }
+          ]
+        }
+      ]
+    }
+  ]
+}
