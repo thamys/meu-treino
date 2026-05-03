@@ -1,0 +1,18 @@
+# Dependências e build
+node_modules
+dist
+
+# OS
+.DS_Store
+
+# Claude Code — config local (permissões da máquina, não versionar)
+.claude/settings.local.json
+
+# BMad — artefatos gerados (não são código fonte)
+_bmad-output/
+
+# Lock file errado (projeto usa npm, não pnpm)
+pnpm-lock.yaml
+
+# POC original do Gemini (substituída por src/App.jsx)
+index.jsx
