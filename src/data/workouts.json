@@ -13,7 +13,7 @@
     {
       "id": "low",
       "name": "BAIXA ENERGIA",
-      "iconId": "battery",
+      "iconId": "smartphone",
       "description": "Movimentos leves e alongamentos. O objetivo é soltar as articulações e manter o hábito sem pressão.",
       "slots": [
         {

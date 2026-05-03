@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   Timer, CheckCircle2, Circle, Scale, Zap,
-  Battery, BatteryMedium, BatteryFull,
+  Smartphone, BatteryMedium, BatteryFull,
   Flame, RefreshCw, Award, CalendarDays,
   PlaySquare, Target, ChevronDown, ChevronUp,
   History, Dumbbell, Trash2
@@ -10,7 +10,7 @@ import workoutsData from './data/workouts.json';
 
 // Cores como constantes → Tailwind não purga strings literais
 const WORKOUT_COLORS = {
-  low:  { bg: 'bg-violet-600',  text: 'text-violet-400'  },
+  low:  { bg: 'bg-sky-500',     text: 'text-sky-400'     },
   med:  { bg: 'bg-orange-500',  text: 'text-orange-400'  },
   high: { bg: 'bg-red-500',     text: 'text-red-400'     },
 };
@@ -27,7 +27,7 @@ const TRACKER_COLORS = {
 };
 
 const ICON_MAP = {
-  'battery':        Battery,
+  'smartphone':     Smartphone,
   'battery-medium': BatteryMedium,
   'battery-full':   BatteryFull,
 };
@@ -167,7 +167,7 @@ export default function App() {
   const progress  = Math.min((doneCount / 6) * 100, 100);
 
   // Cor do ícone Zap alinhada à cor do nível de energia ativo
-  const zapColor = activeTab === 0 ? 'text-violet-400' : activeTab === 2 ? 'text-red-400' : 'text-orange-400';
+  const zapColor = activeTab === 0 ? 'text-sky-400' : activeTab === 2 ? 'text-red-400' : 'text-orange-400';
 
   const grouped = {
     Superiores: workout.slots.filter(s => s.section === 'Superiores'),
