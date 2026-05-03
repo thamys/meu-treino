@@ -180,8 +180,8 @@ export default function App() {
       <div className="w-full max-w-md bg-slate-950 min-h-screen relative">
 
         {/* ── HEADER ── */}
-        <header className="sticky top-0 z-30 bg-slate-950/98 backdrop-blur-md border-b border-slate-800">
-          <div className="px-5 pt-5 pb-3">
+        <header className="sticky top-0 z-30 bg-slate-950/98 backdrop-blur-md border-b border-slate-800 pt-safe">
+          <div className="px-5 pt-3 pb-3">
 
             {/* Título */}
             <div className="flex items-center justify-between mb-4">

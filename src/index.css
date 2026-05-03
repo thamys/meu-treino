@@ -5,3 +5,11 @@
 html, body, #root {
   background-color: #020617; /* slate-950 — evita barra branca no iOS PWA */
 }
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
